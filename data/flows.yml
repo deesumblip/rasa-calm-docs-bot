@@ -1,0 +1,17 @@
+# flows:
+#   transfer_money:
+#     description: Help users send money to friends and family.
+#     steps:
+#       - collect: recipient
+#       - collect: amount
+#         description: the number of US dollars to send
+#       - action: utter_transfer_complete
+
+version: "3.1"
+
+flows:
+  greet_user:
+    description: Greet and offer help.
+    steps:
+      - action: utter_greet
+      - action: utter_help
